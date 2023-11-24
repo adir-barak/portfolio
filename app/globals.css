@@ -3,25 +3,299 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-0: #fefcfa;
+  --main-1: #c2beba;
+  --main-2: #808080;
+  --main-3: #343540;
+  --main-4: #080914;
+  --secondary-0: #daa6f8;
+  --secondary-1: #9b15f4;
+  --secondary-2: #400e68;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply whitespace-break-spaces;
+  }
+  p {
+    @apply font-normal mb-2;
+  }
+  .button {
+    @apply block text-center bg-main-4 border-main-1 text-main-0 py-2 rounded-md mx-auto w-fit px-4 my-4 font-semibold transition-transform;
+  }
+  .button:hover {
+    @apply translate-x-1.5 translate-y-1.5;
+    box-shadow: -4px -4px 0 0 var(--secondary-1);
+  }
+  .button .button-icon {
+    @apply inline-block  text-2xl ml-2 text-secondary-0;
+  }
+  .section {
+    @apply mx-6 mb-4;
+  }
+  .section-title {
+    @apply text-3xl font-light;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  /* --- Header --- */
+  header {
+    @apply sticky top-0 z-50 bg-secondary-1 text-main-0;
+  }
+
+  .header-container {
+    @apply relative w-full h-16 flex flex-row justify-between items-center px-4 border-secondary-0 border-b-2;
+  }
+  /* --- Header -> nav --- */
+  .nav-button {
+    @apply text-3xl p-1 grid place-content-center transition-transform ease-in;
+  }
+  .nav-button:hover {
+    @apply rotate-6 text-secondary-2;
+  }
+  nav {
+    @apply absolute w-full transition-all top-full left-0 overflow-hidden text-main-0 bg-secondary-2 h-0;
+  }
+  nav.open {
+    @apply h-80;
+  }
+  .nav-list {
+    @apply text-center w-[90%] mx-auto;
+  }
+  .nav-list > li {
+    @apply text-xl py-4;
+  }
+  .nav-list > li:not(:last-child) {
+    @apply border-secondary-1 border-b-2;
+  }
+  .nav-list-link:hover {
+    @apply text-secondary-0;
+  }
+  .nav-list-icons {
+    @apply text-4xl flex flex-row justify-evenly items-center;
+  }
+
+  /* --- HeroImage --- */
+  /* --- HeroImage -> hero-img: --- */
+  .hero-img-section {
+    @apply grid place-content-center relative overflow-hidden;
+  }
+  .hero-img-section img {
+    @apply max-w-full h-full object-cover object-left;
+  }
+  .hero-img-container {
+    @apply aspect-square;
+  }
+  .hero-img-base {
+    @apply absolute inset-0;
+  }
+  /* --- HeroImage -> article: --- */
+  .hero-title {
+    @apply text-4xl font-extralight -ml-1 mt-1;
+  }
+  .hero-subtitle {
+    @apply text-3xl font-bold -ml-1 -mt-2 mb-1;
+  }
+
+  /* --- Hero --- */
+  /* --- Hero -> hero-section: --- */
+  .hero-section {
+    @apply relative;
+  }
+  /* --- Hero -> hero-emphasis: --- */
+  .hero-emphasis {
+    @apply font-semibold relative not-italic;
+  }
+  .hero-emphasis::after {
+    @apply content-[''] h-0.5 bg-secondary-1 w-0 absolute left-0 top-full transition-all;
+  }
+  .hero-emphasis:hover::after {
+    @apply w-full;
+  }
+
+  /* --- Resume --- */
+  /* --- Resume -> resume-cards-container: --- */
+  .resume-cards-container {
+    @apply relative;
+  }
+  .resume-cards-container::before {
+    @apply content-[''] absolute w-1 h-full bg-secondary-1 z-10 rounded-l-full;
+  }
+
+  /* --- ResumeCard --- */
+  /* --- ResumeCard -> resume-card: --- */
+  .resume-card {
+    @apply rounded-sm mb-2 border-secondary-2 border-b-2 border-dashed relative;
+  }
+  .resume-card::before {
+    @apply content-[''] absolute w-3 h-3 bg-secondary-0 rounded-full top-4 -left-1 z-20 border-2 border-secondary-1;
+  }
+  /* --- ResumeCard -> resume-card-header: --- */
+  .resume-card-header {
+    @apply p-3 pb-0;
+  }
+  .resume-card-title {
+    @apply font-semibold text-base;
+  }
+  .resume-card-title-span {
+    @apply text-secondary-1 font-bold;
+  }
+  /* .resume-card-subtitle {
+    @apply text-lg;
+  } */
+  .resume-card-time {
+    @apply font-light text-main-3 text-sm;
+  }
+  .resume-card-toggle-button {
+    @apply mx-auto block w-fit h-fit text-2xl;
+  }
+  /* --- ResumeCard -> resume-card-content: --- */
+  /* .resume-card-content {
+    @apply bg-secondary-2 text-secondary-0;
+  } */
+  /* --- ResumeCard -> resume-card-bullet: --- */
+  .resume-card-bullet {
+    @apply relative mb-1 pl-4;
+  }
+  .resume-card-bullet::before {
+    @apply content-['≻'] absolute left-0 font-black;
+  }
+
+  /* --- PortfolioCard --- */
+  /* --- PortfolioCard -> portfolio-card: --- */
+  .portfolio-card {
+    @apply mb-2 border-secondary-2 border-2 rounded-sm;
+  }
+  .portfolio-card-title {
+    @apply font-semibold text-lg text-center;
+  }
+  /* .portfolio-card-subtitle {
+    @apply border-b-2 pb-2 border-secondary-0;
+  } */
+  /* --- PortfolioCard -> portfolio-card-links: --- */
+  .portfolio-card-links {
+    @apply w-fit h-fit ml-auto text-3xl grid place-content-center grid-cols-2 gap-1;
+  }
+  .portfolio-card-link {
+    @apply w-fit h-fit cursor-pointer hover:text-main-0;
+  }
+  /* --- PortfolioCard -> portfolio-card-content: --- */
+  .portfolio-card-content {
+    @apply relative text-secondary-0 p-2 overflow-hidden;
+  }
+  .portfolio-card-content::before {
+    @apply content-[''] block absolute left-0 top-0 h-full w-full bg-secondary-2 opacity-0 transition-opacity -z-10;
+  }
+  .portfolio-card-content:hover::before {
+    @apply opacity-75;
+  }
+  .portfolio-card-content:hover .portfilio-card-thumbnail {
+    @apply opacity-75 -z-20 blur-lg;
+  }
+  /* --- PortfolioCard -> portfolio-card-thumbnail: --- */
+  .portfilio-card-thumbnail {
+    @apply absolute left-0 top-0 h-full w-full object-cover opacity-100 transition-opacity;
+  }
+  /* .portfilio-card-bullet {
+    @apply font-normal;
+  } */
+  /* --- PortfolioCard -> portfolio-card-tools-container: --- */
+  .portfolio-card-tools-container {
+    @apply flex flex-row flex-wrap gap-2 mt-2 text-sm;
+  }
+  .portfolio-card-tool {
+    @apply border border-secondary-0 rounded-md py-1 px-2 pointer-events-none;
+  }
+
+  /* --- TextPager --- */
+  /* --- TextPager -> text-pager: --- */
+  .text-pager {
+    @apply py-2 my-4 border-y-2 border-secondary-0;
+  }
+  /* --- TextPager -> text-pager-content: --- */
+  .text-pager-content {
+    @apply my-2;
+  }
+  /* --- TextPager -> text-pager-controls: --- */
+  .text-pager-controls {
+    @apply w-fit ml-auto;
+  }
+  .text-pager-button {
+    @apply border border-secondary-0;
+  }
+  .text-pager-button:hover {
+    @apply text-main-0 border-main-0;
+  }
+  /* --- TextPager -> text-pager-info: --- */
+  .text-pager-info {
+    @apply mx-2 text-lg pointer-events-none;
+  }
+
+  /* --- About --- */
+  .about-sub-title,
+  .about-recommendations-title {
+    @apply font-bold text-secondary-1;
+  }
+  .about-p em {
+    @apply font-semibold not-italic;
+  }
+  .about-counter {
+    /* @apply text-secondary-1 font-medium animate-pulse; */
+    @apply text-secondary-1 inline-block text-center w-24 border-b border-secondary-0;
+  }
+  /* .about-recommendations-title {
+    @apply font-bold;
+  } */
+  /* --- About -> about-recommendations-list: --- */
+  .about-recommendations-list li {
+    @apply mb-2;
+  }
+  .about-recommendations-list em {
+    @apply font-semibold not-italic;
+  }
+  .about-recommendations-note {
+    @apply font-light italic;
+  }
+
+  /* --- Footer --- */
+  footer {
+    @apply bg-secondary-0 relative pt-10 text-secondary-2 font-medium px-4 text-sm mt-12;
+  }
+  /* --- Footer -> footer-back-to-top: --- */
+  .footer-back-to-top {
+    @apply font-normal absolute top-0 left-1/2 bg-secondary-0 text-main-0 rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform text-6xl grid place-content-center;
+  }
+  .footer-back-to-top:hover {
+    @apply -translate-y-3/4;
+  }
+  /* --- Footer -> footer-title: --- */
+  .footer-title {
+    @apply text-center text-base mb-2;
+  }
+  .footer-title em {
+    @apply not-italic font-semibold;
+  }
+  /* --- Footer -> footer-credit: --- */
+  .footer-credit {
+    @apply text-center py-2;
+  }
+  /* --- Footer -> footer-links: --- */
+  .footer-links {
+    @apply flex flex-col justify-evenly items-center mx-auto font-semibold gap-1 py-2 border-y border-secondary-2;
+  }
+  .footer-link {
+    @apply block w-fit h-fit;
+  }
+
+  /* --- ContactForm --- */
+  .contact-form {
+    @apply flex flex-col font-normal text-base;
+  }
+  .form-label {
+    @apply block font-semibold;
+  }
+  .form-input {
+    @apply bg-main-0 rounded-sm p-1.5 mb-2;
+  }
 }
