@@ -11,7 +11,9 @@
         "Turned Moshal Social into an open–source project, aiming to offer both current students and alumni the opportunity to gain practical experience, experiment with web development technologies and to give back to the Moshal Program’s community."
       ],
 
-      "thumbnail": "/gif.gif"
+      "thumbnail": "/gif.gif",
+      "link": "https://moshalsocial.site/",
+      "github": "https://github.com/ArieLevental/moshal-social"
     },
     {
       "title": "DR. AI",
@@ -22,7 +24,9 @@
         "Customized a Next.js template to align with the prototype's requirements by making visual modifications and additions using MUI and integrating logic and mock functionality with React to showcase the concept in action.",
         "Led a diverse team consisting of both technology and medical students to develop an innovative solution for healthcare challenges."
       ],
-      "thumbnail": "/demo2.jpg"
+      "thumbnail": "/demo2.jpg",
+      "link": "https://dr-ai.up.railway.app/auth/login",
+      "github": "https://github.com/adir-barak/Dr-AI"
     },
     {
       "title": "Boggle.py",
@@ -34,7 +38,8 @@
         "Crafted custom data structures and algorithms to maximize efficiency, working on a 300K words dataset, resulting in a highly responsive and smooth player experience.",
         "Enhanced player experience even further with sound effects, visual cues and a special “Party” game mode."
       ],
-      "thumbnail": "/demo3.jpg"
+      "thumbnail": "/demo3.jpg",
+      "github": "https://github.com/adir-barak/Boggle"
     },
     {
       "title": "M.I Aluminium",
@@ -46,7 +51,8 @@
         "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
         "many. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
       ],
-      "thumbnail": "/demo4.jpg"
+      "thumbnail": "/demo4.jpg",
+      "link": "https://m-i-aluminium.vercel.app/#hero"
     },
     {
       "title": "Portfolio Website",
@@ -58,7 +64,8 @@
         "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
         "many. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
       ],
-      "thumbnail": "/demo4.jpg"
+      "thumbnail": "/demo4.jpg",
+      "github": "https://github.com/adir-barak/portfolio"
     }
   ]
 }

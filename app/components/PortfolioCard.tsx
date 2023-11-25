@@ -24,13 +24,13 @@ export default function PortfolioCard({ point }: Props) {
         <h5 className='portfolio-card-subtitle'>
           {point.subTitle}
           <div className='portfolio-card-links'>
-            {(point?.link || true) && (
-              <Link href='#' target='_blank' className='portfolio-card-link'>
+            {point?.link && (
+              <Link href={point.link} target='_blank' className='portfolio-card-link'>
                 <ArrowSquareOut className='inline' />
               </Link>
             )}
-            {(point?.github || true) && (
-              <Link href='#' target='_blank' className='portfolio-card-link'>
+            {point?.github && (
+              <Link href={point?.github} target='_blank' className='portfolio-card-link'>
                 <GithubLogo className='inline' />
               </Link>
             )}

@@ -6,29 +6,42 @@ type Props = {};
 export default function HeroImage({}: Props) {
   const [value, setValue] = useState(54);
   return (
+    // <div
+    //   className='hero-img-section'
+    //   onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
+    //     const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
+    //     setValue((e.clientX / rect.right) * 100);
+    //   }}>
+    //   <div className='hero-img-container'>
+    //     <Image
+    //       src='/me-random.png'
+    //       alt='A picture of me'
+    //       width={1889}
+    //       height={1757}
+    //       className='hero-img-base'
+    //       style={{ width: `${value > 50 ? Math.ceil(value) : value}%` }}
+    //     />
+    //     <Image src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='inset-0' />
+    //   </div>
+    // </div>
     <div
-      className='hero-img-section'
+      className='hero-img-container'
       onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
         const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
-        setValue((e.clientX / rect.right) * 100);
+        const relativeX = e.clientX - rect.left;
+        const value = (relativeX / rect.width) * 100;
+        setValue(value);
       }}>
-      <div className='hero-img-container'>
-        <Image
-          src='/me-random.png'
-          alt='A picture of me'
-          width={2519}
-          height={2543}
-          className='hero-img-base'
-          style={{ width: `${value > 50 ? Math.ceil(value) : value}%` }}
-        />
-        <Image
-          src='/me-wordom.png'
-          alt='A picture of me'
-          width={2519}
-          height={2543}
-          className='w-full inset-0'
-        />
-      </div>
+      <Image
+        src='/me-random.png'
+        alt='A picture of me'
+        width={1889}
+        height={1757}
+        className='hero-img-special'
+        style={{ width: `${value > 50 ? Math.ceil(value) : value}%` }}
+      />
+      <Image src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
+      
     </div>
   );
 }

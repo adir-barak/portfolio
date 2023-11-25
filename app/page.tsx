@@ -5,7 +5,7 @@ import Resume from './components/Resume';
 
 export default function Home() {
   return (
-    <main className='bg-crimson-0 min-h-screen'>
+    <main id='top' className='bg-crimson-0 min-h-screen'>
       <Hero />
       <Resume />
       <Projects />

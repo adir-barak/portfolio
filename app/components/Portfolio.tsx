@@ -8,10 +8,11 @@ export default function Portfolio({}: Props) {
   return (
     <section id='portfolio' className='section'>
       <h3 className='section-title'>Portfolio</h3>
-      <div className='portfolio-cards-container'></div>
-      {data.map((point, i) => {
-        return <PortfolioCard key={i} point={point} />;
-      })}
+      <div className='portfolio-cards-container'>
+        {data.map((point, i) => {
+          return <PortfolioCard key={i} point={point} />;
+        })}
+      </div>
     </section>
   );
 }

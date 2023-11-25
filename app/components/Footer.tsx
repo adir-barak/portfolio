@@ -8,33 +8,37 @@ type Props = {};
 export default function Footer({}: Props) {
   return (
     <footer id='contact'>
-      <ScrollToLink href='#hero' className='footer-back-to-top'>
+      <ScrollToLink href='#top' className='footer-back-to-top'>
         <CaretUp className='inline' />
       </ScrollToLink>
       <h3 className='footer-title'>
         Say hello or contact me directly via{' '}
-        <Link href='#'>
-          <em>Adir.Barak@huji.mail.ac.il</em>
+        <Link href='mailto:Adir.Barak@mail.huji.ac.il'>
+          <em>Adir.Barak@mail.huji.ac.il</em>
         </Link>
       </h3>
       <ContactForm />
       <div>
         <div className='footer-links'>
-          <Link href='' className='footer-link'>
+          <Link href='/terms-of-use' className='footer-link' aria-label='link to the terms of use page'>
             Terms of Use
           </Link>
-          <Link href='' className='footer-link'>
+          <Link href='/privacy-policy' className='footer-link' aria-label='link to the privacy policy page'>
             Privacy Policy
           </Link>
-          <Link href='' className='footer-link'>
+          <Link href='accessibility-statement' className='footer-link' aria-label='link to the accessibility statement page'>
             Accessibility Statement
           </Link>
-          <Link href='' className='footer-link'>
+          <Link href='/sitemap' className='footer-link' aria-label='link to the sitemap page'>
             Sitemap
           </Link>
         </div>
         <p className='footer-credit'>
-          Built with <Heart className='inline' /> by <Link href=''>Adir Barak</Link> <Copyright className='inline' />
+          Built with <Heart className='inline' /> by{' '}
+          <Link href='https://www.linkedin.com/in/adir-barak/' target='_blank' aria-label='link to my linkedin profile'>
+            Adir Barak
+          </Link>{' '}
+          <Copyright className='inline' />
           2023
         </p>
       </div>

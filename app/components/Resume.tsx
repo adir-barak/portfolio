@@ -17,7 +17,7 @@ export default function Resume({}: Props) {
           target='_blank'
           rel='noopener noreferrer'
           className='inline-block w-fit h-fit text-red-500 cursor-pointer'>
-          <FilePdf className='text-4xl inline' />
+          <FilePdf className='inline text-4xl md:text-5xl lg:text-6xl' />
         </Link>
       </h3>
       <div className='resume-cards-container'>

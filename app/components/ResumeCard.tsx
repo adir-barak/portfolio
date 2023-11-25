@@ -21,7 +21,7 @@ export default function ResumeCard({ point }: Props) {
     setIsCardOpen((prev) => !prev);
   };
   return (
-    <article className='resume-card' id={`resume-card-${point.id}`}>
+    <article className={`resume-card ${Number(point.id) % 2 ? 'lg:alt' : ''}`} id={`resume-card-${point.id}`}>
       <div className='resume-card-header'>
         <h4 className='resume-card-title'>
           {point.jobTitle} <span className='resume-card-title-span'>@ {point.institution}</span>
@@ -31,9 +31,7 @@ export default function ResumeCard({ point }: Props) {
           {point.start} - {point.end}
         </p>
         <button className='resume-card-toggle-button' onClick={toggleCard}>
-          <p className={`transition-all ${isCardOpen && 'rotate-180'}`}>
-            <CaretDown className='inline' />
-          </p>
+          <CaretDown className={`transition-all ${isCardOpen && 'rotate-180'} inline`} />
         </button>
       </div>
       <ul className={`resume-card-content ${isCardOpen ? 'h-fit visible' : 'h-0 invisible'}`}>
@@ -44,7 +42,7 @@ export default function ResumeCard({ point }: Props) {
                 {bullet}
               </li>
             ))}
-            <ScrollToLink href={`#resume-card-${point.id}`} onClick={toggleCard} className='resume-card-toggle-button'>
+            <ScrollToLink href={`#resume-card-${point.id}`} onClick={toggleCard} className='resume-card-toggle-button sm:hidden'>
               <CaretUp className='inline' />
             </ScrollToLink>
           </>
