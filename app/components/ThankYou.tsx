@@ -8,7 +8,7 @@ export default function ThankYou({}: Props) {
       <p>
         Thanks!
         <br />
-        I'll get back to you ASAP.
+        I&apos;ll get back to you ASAP.
       </p>
     </div>
   );

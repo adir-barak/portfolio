@@ -11,25 +11,25 @@ export default function About({}: Props) {
         <article>
           <h4 className='about-sub-title'>Let&apos;s. get. personal.</h4>
           <p className='about-p'>
-            I'm Adir.
+            I&apos;m Adir.
             <br />
             Born on June 7th, 1998 - that gives you{' '}
             <span className='about-counter'>
               <Counter />
             </span>{' '}
             seconds to pick the perfect birthday gift – <em className='extra'>no pressure</em>.<br />
-            I'm the youngest of three but the first to go in the academic route, currently navigating the world of <em>Computer
+            I&apos;m the youngest of three but the first to go in the academic route, currently navigating the world of <em>Computer
             Science</em> as a student at The Hebrew University of Jerusalem.
           </p>
           <p className='about-p'>
-            When I'm not searching for bugs in my code, you'll find me either drumming or strumming the guitar because <em>music</em> is a
+            When I&apos;m not searching for bugs in my code, you&apos;ll find me either drumming or strumming the guitar because <em>music</em> is a
             huge passion of mine.
             <br />
-            <em>Video games, constant learning, exercising, and quality time with my nephews</em> also rank high up on my 'Things I Enjoy'
+            <em>Video games, constant learning, exercising, and quality time with my nephews</em> also rank high up on my &apos;Things I Enjoy&apos;
             list.
           </p>
           <p className='about-p'>
-            I'm also deeply intrigued by the realms of <em>business, philosophy, psychology, and science</em>.
+            I&apos;m also deeply intrigued by the realms of <em>business, philosophy, psychology, and science</em>.
             <br />I find myself thinking or learning about them almost everyday.
           </p>
         </article>
