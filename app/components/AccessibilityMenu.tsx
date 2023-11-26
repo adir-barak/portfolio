@@ -112,9 +112,9 @@ export default function AccessibilityMenu({}: Props) {
         <ScrollToLink href='#contact' className='accessibility-menu-item' aria-label='scroll to the contact section'>
           Contact
         </ScrollToLink>
-        {pathname !== '/accessibilty-statement' && (
+        {pathname !== '/accessibility-statement' && (
           <Link
-            href='/accessibilty-statement'
+            href='/accessibility-statement'
             className='accessibility-menu-item'
             aria-label='link to the accessibility statement'>
             Accessibility Statement
