@@ -2,17 +2,14 @@
 import { useState } from 'react';
 import { PaperPlaneTilt } from '@phosphor-icons/react/dist/ssr';
 import { handleContactFormSubmission } from '../lib/actions';
+import ThankYou from './ThankYou';
 type Props = {};
 
 export default function ContactForm({}: Props) {
   const [formSubmitted, setFormSubmitted] = useState(false);
   return (
     <>
-      <div className={`thank-you ${!formSubmitted && 'hidden'}`}>
-        Thanks!
-        <br />
-        I'll get back to you ASAP.
-      </div>
+      <ThankYou />
       <form
         className={`contact-form ${formSubmitted && 'hidden'}`}
         action={handleContactFormSubmission}
@@ -42,7 +39,7 @@ export default function ContactForm({}: Props) {
           <PaperPlaneTilt className='button-icon' />
         </button>
       </form>
-  </>
+    </>
     // <>
     //   {formSubmitted ? (
     //     <div className='thank-you'>
