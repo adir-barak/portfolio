@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import Image from 'next/image';
 type Props = {};
 
@@ -30,18 +30,19 @@ export default function HeroImage({}: Props) {
         const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
         const relativeX = e.clientX - rect.left;
         const value = (relativeX / rect.width) * 100;
-        setValue(value);
+        // ensure it goes all the way from 0 to 100
+        setValue(value > 50 ? Math.ceil(value) : Math.floor(value));
       }}>
       <Image
+        priority={true}
         src='/me-random.png'
         alt='A picture of me'
         width={1889}
         height={1757}
         className='hero-img-special'
-        style={{ width: `${value > 50 ? Math.ceil(value) : value}%` }}
+        style={{ width: `${value}%` }}
       />
-      <Image src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
-      
+      <Image priority={true} src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
     </div>
   );
 }

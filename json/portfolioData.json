@@ -3,7 +3,7 @@
     {
       "title": "Moshal Social",
       "subTitle": "A professional social media hub for the Moshal Program - uniting scholarship recipients, alumni, and staff.",
-      "tools": ["React", "MongoDB", "Firebase Storage", "Node.js", "Express.js", "Open-Source", "JWT", "React-Toastify"],
+      "tools": ["React", "MongoDB", "Firebase Storage", "Node.js", "Express.js", "Open-Source", "JWT", "React-Toastify", "Git"],
       "bullets": [
         "Designed a dynamic and interactive web platform that allows the Moshal Program scholarship recipients, alumni and staff to mingle, interact and help each other.",
         "Developed a user-friendly interface using React (with JavaScript, HTML & CSS) and a reliable backend with Express, Mongoose and Firebase Storage service.",
@@ -11,7 +11,15 @@
         "Turned Moshal Social into an open–source project, aiming to offer both current students and alumni the opportunity to gain practical experience, experiment with web development technologies and to give back to the Moshal Program’s community."
       ],
 
-      "thumbnail": "/gif.gif",
+      "thumbnails": [
+        { "src": "/moshal-social-1.jpg", "alt": "moshal-social-demo-1", "width": "960", "height": "540" },
+        { "src": "/moshal-social-2.jpg", "alt": "moshal-social-demo-2", "width": "960", "height": "540" },
+        { "src": "/moshal-social-3.jpg", "alt": "moshal-social-demo-3", "width": "960", "height": "540" },
+        { "src": "/moshal-social-4.jpg", "alt": "moshal-social-demo-4", "width": "960", "height": "540" },
+        { "src": "/moshal-social-5.jpg", "alt": "moshal-social-demo-5", "width": "960", "height": "540" },
+        { "src": "/moshal-social-6.jpg", "alt": "moshal-social-demo-6", "width": "960", "height": "540" },
+        { "src": "/moshal-social-7.jpg", "alt": "moshal-social-demo-7", "width": "960", "height": "540" }
+      ],
       "link": "https://moshalsocial.site/",
       "github": "https://github.com/ArieLevental/moshal-social"
     },
@@ -24,7 +32,14 @@
         "Customized a Next.js template to align with the prototype's requirements by making visual modifications and additions using MUI and integrating logic and mock functionality with React to showcase the concept in action.",
         "Led a diverse team consisting of both technology and medical students to develop an innovative solution for healthcare challenges."
       ],
-      "thumbnail": "/demo2.jpg",
+      "thumbnails": [
+        { "src": "/dr-ai-1.jpg", "alt": "dr-ai-demo-1", "width": "960", "height": "540" },
+        { "src": "/dr-ai-2.jpg", "alt": "dr-ai-demo-2", "width": "960", "height": "540" },
+        { "src": "/dr-ai-3.jpg", "alt": "dr-ai-demo-3", "width": "960", "height": "540" },
+        { "src": "/dr-ai-4.jpg", "alt": "dr-ai-demo-4", "width": "960", "height": "540" },
+        { "src": "/dr-ai-5.jpg", "alt": "dr-ai-demo-5", "width": "960", "height": "540" },
+        { "src": "/dr-ai-6.jpg", "alt": "dr-ai-demo-6", "width": "960", "height": "540" }
+      ],
       "link": "https://dr-ai.up.railway.app/auth/login",
       "github": "https://github.com/adir-barak/Dr-AI"
     },
@@ -38,33 +53,55 @@
         "Crafted custom data structures and algorithms to maximize efficiency, working on a 300K words dataset, resulting in a highly responsive and smooth player experience.",
         "Enhanced player experience even further with sound effects, visual cues and a special “Party” game mode."
       ],
-      "thumbnail": "/demo3.jpg",
+      "thumbnails": [
+        { "src": "/boggle-1.jpg", "alt": "boggle-demo-1", "width": "955", "height": "550" },
+        { "src": "/boggle-2.jpg", "alt": "boggle-demo-2", "width": "955", "height": "550" },
+        { "src": "/boggle-3.jpg", "alt": "boggle-demo-3", "width": "955", "height": "550" },
+        { "src": "/boggle-4.jpg", "alt": "boggle-demo-4", "width": "955", "height": "550" },
+        { "src": "/boggle-5.jpg", "alt": "boggle-demo-5", "width": "955", "height": "550" }
+      ],
       "github": "https://github.com/adir-barak/Boggle"
     },
     {
       "title": "M.I Aluminium",
-      "subTitle": "A website for the M.I Aluminium Company",
-      "tools": ["Next.js", "Tailwind-CSS", "Nodemailer", "React-Email", "Zod", "UI / UX"],
-      "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "has been printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "subTitle": "A website for the M.I Aluminium Company.",
+      "tools": [
+        "Next.js",
+        "Tailwind-CSS",
+        "Nodemailer",
+        "React-Email",
+        "Zod",
+        "UI / UX",
+        "Accessibility",
+        "TypeScript",
+        "Validation",
+        "Git"
       ],
-      "thumbnail": "/demo4.jpg",
+      "bullets": [
+        "Engineered a responsive, user-friendly and accessible internet portal for M.I Aluminium, allowing potential clients to explore the company's work and easily initiate contact.",
+        "Implemented an efficient automated email notification system, seamlessly linking the website's 'contact' form to the company email's inbox for streamlined communication.",
+        "Implemented customized client-side and server-side validations to enhance the user experience and uphold data integrity.",
+        "Conceptualized and engineered an accessibility menu, fostering an inclusive online experience for users with disabilities and facilitating a better comprehension of the website's content."
+      ],
+      "thumbnails": [
+        { "src": "/mi-aluminium-1.jpg", "alt": "m.i-aluminium-demo-1", "width": "960", "height": "540" },
+        { "src": "/mi-aluminium-2.jpg", "alt": "m.i-aluminium-demo-3", "width": "960", "height": "540" },
+        { "src": "/mi-aluminium-3.jpg", "alt": "m.i-aluminium-demo-2", "width": "960", "height": "540" },
+        { "src": "/mi-aluminium-4.jpg", "alt": "m.i-aluminium-demo-4", "width": "960", "height": "540" },
+        { "src": "/mi-aluminium-5.jpg", "alt": "m.i-aluminium-demo-5", "width": "960", "height": "540" },
+        { "src": "/mi-aluminium-6.jpg", "alt": "m.i-aluminium-demo-6", "width": "960", "height": "540" }
+      ],
       "link": "https://m-i-aluminium.vercel.app/#hero"
     },
     {
       "title": "Portfolio Website",
-      "subTitle": "The very website you are in right now ☺",
-      "tools": ["Next.js", "Tailwind-CSS", "Nodemailer", "React-Email", "Zod", "UI / UX"],
+      "subTitle": "The very website you're surfing right now :).",
+      "tools": ["Next.js", "Tailwind-CSS", "UI / UX", "Accessibility", "TypeScript", "Git", "Mobile First"],
       "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "has been printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        "Followed a mobile-first methodology to craft a visually compelling, fully-responsive, and accessible website using Tailwind-CSS.",
+        "Incorporated a previously developed accessibility menu into the project, fostering an inclusive and user-friendly browsing experience for individuals with disabilities, thereby improving their comprehension of the website's content."
       ],
-      "thumbnail": "/demo4.jpg",
+      "thumbnails": [{ "src": "/portfolio-thumbnail.jpg", "alt": "portfolio-demo", "width": "796", "height": "796" }],
       "github": "https://github.com/adir-barak/portfolio"
     }
   ]

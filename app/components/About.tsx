@@ -17,19 +17,19 @@ export default function About({}: Props) {
             <span className='about-counter'>
               <Counter />
             </span>{' '}
-            seconds to pick the perfect birthday gift – <em>no pressure</em>.<br />
-            I'm the youngest of three but the first to go in the academic route, currently navigating the world of Computer
-            Science as a student at The Hebrew University of Jerusalem.
+            seconds to pick the perfect birthday gift – <em className='extra'>no pressure</em>.<br />
+            I'm the youngest of three but the first to go in the academic route, currently navigating the world of <em>Computer
+            Science</em> as a student at The Hebrew University of Jerusalem.
           </p>
           <p className='about-p'>
-            When I'm not searching for bugs in my code, you'll find me either drumming or strumming the guitar because music is a
+            When I'm not searching for bugs in my code, you'll find me either drumming or strumming the guitar because <em>music</em> is a
             huge passion of mine.
             <br />
-            Video games, constant learning, exercising, and quality time with my nephews also rank high up on my 'Things I Enjoy'
+            <em>Video games, constant learning, exercising, and quality time with my nephews</em> also rank high up on my 'Things I Enjoy'
             list.
           </p>
           <p className='about-p'>
-            I'm also deeply intrigued by the realms of business, philosophy, psychology, and science.
+            I'm also deeply intrigued by the realms of <em>business, philosophy, psychology, and science</em>.
             <br />I find myself thinking or learning about them almost everyday.
           </p>
         </article>
@@ -40,7 +40,7 @@ export default function About({}: Props) {
               <em>Music:</em> Greta Van Fleet, Dirty Honey, Roger Troutman.
             </li>
             <li>
-              <em>TV:</em> Boardwalk Empire, The Good Place, One Piece.
+              <em>TV Shows:</em> Boardwalk Empire, The Good Place, One Piece.
             </li>
             <li>
               <em>Movies:</em> Bullet Train, American History X, Papillon

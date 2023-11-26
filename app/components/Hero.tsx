@@ -8,17 +8,20 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <section id='hero' className='hero-section'>
+    <section id='hero' className='hero-section xl:hero-section-xl'>
       <HeroImage />
-      {/* <article className='hero-section-article'> */}
       <article className='hero-section-article'>
         <div>
           <h1 className='hero-title'>
-            PROBLEM
+            {/* PROBLEM
             <br />
-            SOLVER.
+            SOLVER. */}
+            SOLVING
+            <br />
+            PROBLEMS.
           </h1>
-          <h2 className='hero-subtitle'>That&apos;s who I am.</h2>
+          {/* <h2 className='hero-subtitle'>That&apos;s who I am.</h2> */}
+          <h2 className='hero-subtitle'>That&apos;s what I do.</h2>
         </div>
         <div>
           <p className='hero-p'>
@@ -48,8 +51,9 @@ export default function Hero({}: Props) {
           </ScrollToLink>
         </div>
       </article>
-      {/* <div aria-hidden={true} className='absolute bg-secondary-1 w-[150vw] h-36 -rotate-12 bottom-0 left-1/2 -translate-x-1/2 -z-10'></div> */}
-      <div aria-hidden={true} className='hero-decor'></div>
+      {/* <div aria-hidden={true} className='hero-decor a'></div>
+      <div aria-hidden={true} className='hero-decor b'></div>
+      <div aria-hidden={true} className='hero-decor c'></div> */}
     </section>
   );
 }

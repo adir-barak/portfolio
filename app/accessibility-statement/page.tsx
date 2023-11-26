@@ -67,7 +67,7 @@ export default function page({}: Props) {
         </p>
       </section>
       <section>
-        <h2>Accessibility of mywebsite</h2>
+        <h2>Accessibility of the website</h2>
         <p>
           I aim for the website to be as readable as possible. However, I recognize that I may fall short of this goal at times.
           If you come across confusing text or It is not clear, I would appreciate it if you brought it to my attention so that I

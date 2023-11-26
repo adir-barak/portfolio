@@ -4,8 +4,8 @@ type Props = {};
 export default function Loading() {
   // Or a custom loading skeleton component
   return (
-    <div className='h-screen w-screen mx-auto grid place-items-center place-content-center text-8xl text-secondary-1'>
-      <CircleNotch className='animate-spin' />
+    <div className='fallback-section'>
+      <CircleNotch className='animate-spin text-8xl' />
     </div>
   );
 }

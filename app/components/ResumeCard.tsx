@@ -10,7 +10,7 @@ type Props = {
     jobTitle: string;
     highlight: string;
     start: string;
-    end: string;
+    end?: string;
     bullets: string[];
   };
 };
@@ -28,7 +28,8 @@ export default function ResumeCard({ point }: Props) {
         </h4>
         <h5 className='resume-card-subtitle'>{point.highlight}</h5>
         <p className='resume-card-time'>
-          {point.start} - {point.end}
+          {point.start}
+          {point.end ? ` - ${point.end}` : ''}
         </p>
         <button className='resume-card-toggle-button' onClick={toggleCard}>
           <CaretDown className={`transition-all ${isCardOpen && 'rotate-180'} inline`} />

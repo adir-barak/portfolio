@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import TextPager from './TextPager';
 import { ArrowSquareOut, GithubLogo } from '@phosphor-icons/react/dist/ssr';
+import ImagesSlideshow from './ImagesSlideshow';
 
 type Props = {
   point: {
@@ -9,7 +10,7 @@ type Props = {
     subTitle: string;
     tools: string[];
     bullets: string[];
-    thumbnail: string;
+    thumbnails: { src: string; alt: string; width: string; height: string }[];
     link?: string;
     github?: string;
   };
@@ -36,7 +37,11 @@ export default function PortfolioCard({ point }: Props) {
             )}
           </div>
         </h5>
-        <Image src={point.thumbnail} alt='alt' width={400} height={400} className='portfilio-card-thumbnail' />
+        {/* <Image src={point.thumbnail} alt='alt' width={400} height={400} className='portfilio-card-thumbnail' /> */}
+        <div className='portfilio-card-thumbnail'>
+          <ImagesSlideshow array={point.thumbnails} />
+        </div>
+
         <TextPager array={point.bullets} />
         <div className='portfolio-card-tools-container'>
           {point.tools.sort().map((tool, i) => (

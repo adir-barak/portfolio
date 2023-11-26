@@ -2,70 +2,51 @@
   "data": [
     {
       "id": "1",
-      "institution": "IDF",
-      "jobTitle": "Combat Medic",
-      "highlight": "lorem ipsum",
-      "start": "July 2016",
-      "end": "March 2019",
+      "institution": "Somewhere Great",
+      "jobTitle": "In search of a student position or internship",
+      "highlight": "Actively exploring opportunities to contribute to a mission-driven organization.",
+      "start": "Right Now!",
       "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        "Seeking hands-on experience and avenues for professional growth.",
+        "Eager to collaborate on exciting and meaningful projects.",
+        "Particularly drawn to roles that offer a dynamic environment and the chance to make a tangible impact on organizational goals."
       ]
     },
     {
       "id": "2",
-      "institution": "Bank HaPoalim",
-      "jobTitle": "Business Teller",
-      "highlight": "lorem ipsum",
-      "start": "June 2021",
-      "end": "September 2022",
+      "institution": "HUJI",
+      "jobTitle": "Bsc of Computer Science Student",
+      "highlight": "Immersing myself in the fascinating realm of computer science, guided by top-tier professors.",
+      "start": "October 2022",
+      "end": "Present",
       "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        "Studying the mathematical and computer science theories to establish a robust foundation for future endeavors.",
+        "Finding immense value in academic pursuits, deriving meaning from the ongoing journey, and leveraging practical tools acquired through computer science courses."
       ]
     },
     {
       "id": "3",
-      "institution": "HUJI",
-      "jobTitle": "Bsc of Computer Science",
-      "highlight": "lorem ipsum",
-      "start": "October 2022",
-      "end": "Present",
+      "institution": "Bank HaPoalim",
+      "jobTitle": "Bank Teller",
+      "highlight": "Delivered services to business clients, notably 'Financial Services Providers,' dealing with exceptionally large amounts of cash.",
+      "start": "June 2021",
+      "end": "September 2022",
       "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many web"
+        "Offered banking services including cash and foreign exchange, checks, and diverse general financial operations.",
+        "Exhibited a strong service orientation by catering to customers from diverse backgrounds and across various financial sectors.",
+        "Demonstrated a high degree of responsibility - handling substantial amounts of money in high-pressure situations."
       ]
     },
     {
       "id": "4",
-      "institution": "Undeground",
-      "jobTitle": "Warlord",
-      "highlight": "Crushing my opponents with my bare hands and listen as they beg for mercy with their very last breaths",
-      "start": "Soon, very soon...",
-      "end": "New 0 year",
+      "institution": "IDF",
+      "jobTitle": "Combat Medic",
+      "highlight": "Headed the medical equipment department at the 460th Brigade headquarters, the training base of the Armored Corps.",
+      "start": "July 2016",
+      "end": "March 2019",
       "bullets": [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-        "has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
-      ]
-    },
-    {
-      "id": "5",
-      "institution": "Peaceful Palms, Florida",
-      "jobTitle": "Retiree",
-      "highlight": "The nice, warm weather and my morning walks",
-      "start": "New 0 year",
-      "end": "As long as I can",
-      "bullets": [
-        "has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        "many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+        "Served in the medical care team of the battalion aid station, which is responsible for both military, and civilian emergencies in the region.",
+        "Functioned as a medic for both conscript and career soldiers at the brigade headquarters."
       ]
     }
   ]

@@ -1,3 +1,4 @@
+
 import About from './components/About';
 import Hero from './components/Hero';
 import Projects from './components/Portfolio';
@@ -5,7 +6,7 @@ import Resume from './components/Resume';
 
 export default function Home() {
   return (
-    <main id='top' className='bg-crimson-0 min-h-screen'>
+    <main id='top'>
       <Hero />
       <Resume />
       <Projects />
