@@ -2,49 +2,49 @@ import { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'מדיניות פרטיות - מ.י אלומיניום',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['אלומיניום', 'אלומיניום ירושלים', 'חלונות', 'תריסים', 'הרכבה אישית', 'אבי יעל'],
-  description: 'מדיניות פרטיות עבור אתר מ.י אלומיניום',
-  metadataBase: new URL('https://m-i-aluminium.vercel.app/'),
-  openGraph: {
-    title: 'מדיניות פרטיות - מ.י אלומיניום',
-    description: 'מדיניות פרטיות עבור אתר מ.י אלומיניום',
-    siteName: 'מ.י אלומיניום',
-    images: [
-      {
-        url: '/closeup-shot.jpg',
-        width: 1257,
-        height: 623,
-      },
-    ],
-    locale: 'he',
-    type: 'website',
-  },
-  robots: {
+  title: 'Privacy Policy - Adir Barak',
+referrer: 'origin-when-cross-origin',
+keywords: ['adir barak', 'portfolio', 'programmer', 'resume', 'developer'],
+  description: "The privacy policy for Adir Barak's portfolio website.",
+metadataBase: new URL('https://adirbarak.com/'),
+openGraph: {
+  title: 'Privacy Policy - Adir Barak',
+  description: "The privacy policy for Adir Barak's portfolio website.",
+  siteName: 'Adir Barak',
+  images: [
+    {
+      url: '/portfolio-thumbnail.jpg',
+      width: 796,
+      height: 796,
+    },
+  ],
+  locale: 'en',
+  type: 'website',
+},
+robots: {
+  index: true,
+  follow: true,
+  nocache: true,
+  googleBot: {
     index: true,
     follow: true,
     nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      nocache: true,
-      noimageindex: true,
-    },
+    noimageindex: true,
   },
-  icons: {
-    icon: '/logo-icon.png',
-  },
-  twitter: {
-    title: 'מדיניות פרטיות - מ.י אלומיניום',
-    description: 'מדיניות פרטיות עבור אתר מ.י אלומיניום',
-    images: ['/closeup-shot.jpg'],
-  },
-  category: 'אלומיניום',
+},
+icons: {
+  icon: '/icon.png',
+},
+twitter: {
+  title: 'Privacy Policy - Adir Barak',
+  description: "The privacy policy for Adir Barak's portfolio website.",
+  images: ['/portfolio-thumbnail.jpg'],
+},
+category: 'portfolio',
 };
 
 export const viewport: Viewport = {
-  themeColor: 'black',
+themeColor: '#9B15F4',
 };
 
 type Props = {};

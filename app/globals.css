@@ -14,8 +14,26 @@
 }
 
 @layer base {
-  body {
-    @apply whitespace-break-spaces;
+  .body {
+    @apply whitespace-break-spaces bg-main-0 text-main-4;
+  }
+  .body.monochrome > * {
+    @apply grayscale;
+  }
+  .body.inverted {
+    @apply bg-main-4;
+  }
+  .body.inverted > * {
+    @apply invert;
+  }
+  .body.inverted img {
+    @apply invert;
+  }
+  .body.emphasizeLinks > * a {
+    @apply bg-yellow-400;
+  }
+  .body.accessibleFont > * {
+    @apply font-serif;
   }
   main {
     @apply min-h-screen;
@@ -43,6 +61,22 @@
   }
   .section-title {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light md:font-extralight mb-1 lg:mb-2;
+  }
+
+  .accessibility-menu {
+    @apply fixed bottom-8 left-2 z-50 md:bottom-4 md:left-4 flex flex-col text-secondary-2;
+  }
+  .accessibility-menu-content {
+    @apply hidden;
+  }
+  .accessibility-menu.open .accessibility-menu-content {
+    @apply flex flex-col gap-2 bg-secondary-0 p-2 border-secondary-2 border max-h-[448px] overflow-y-scroll;
+  }
+  .accessibility-menu-item {
+    @apply text-center block border-secondary-2 border px-2;
+  }
+  .accessibility-toggle-button {
+    @apply border-main-1 cursor-pointer bg-blue-500 rounded-full aspect-square grid place-items-center border-4 self-start text-main-0 w-11 p-1 text-xl sm:w-14 sm:p-2 sm:text-3xl;
   }
 }
 

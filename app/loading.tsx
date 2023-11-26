@@ -1,4 +1,10 @@
+import { Viewport } from 'next';
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr';
+
+export const viewport: Viewport = {
+  themeColor: '#9B15F4',
+};
+
 type Props = {};
 
 export default function Loading() {

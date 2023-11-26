@@ -1,8 +1,9 @@
-// import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AccessibilityMenu from './components/AccessibilityMenu';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,10 +15,11 @@ const inter = Inter({ subsets: ['latin'] });
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html dir='ltr' lang='en'>
-      <body className={`${inter.className} bg-main-0 text-main-4`}>
+      <body className={`${inter.className} body`}>
         <Header />
         {children}
         <Footer />
+        <AccessibilityMenu />
       </body>
     </html>
   );

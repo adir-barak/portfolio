@@ -2,23 +2,23 @@ import { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'תנאי שימוש - מ.י אלומיניום',
+  title: 'Terms of Use - Adir Barak',
   referrer: 'origin-when-cross-origin',
-  keywords: ['אלומיניום', 'אלומיניום ירושלים', 'חלונות', 'תריסים', 'הרכבה אישית', 'אבי יעל'],
-  description: 'תנאי שימוש עבור אתר מ.י אלומיניום',
-  metadataBase: new URL('https://m-i-aluminium.vercel.app/'),
+  keywords: ['adir barak', 'portfolio', 'programmer', 'resume', 'developer'],
+  description: "The terms of use for Adir Barak's portfolio website.",
+  metadataBase: new URL('https://adirbarak.com/'),
   openGraph: {
-    title: 'תנאי שימוש - מ.י אלומיניום',
-    description: 'תנאי שימוש עבור אתר מ.י אלומיניום',
-    siteName: 'מ.י אלומיניום',
+    title: 'Terms of Use - Adir Barak',
+    description: "The terms of use for Adir Barak's portfolio website.",
+    siteName: 'Adir Barak',
     images: [
       {
-        url: '/closeup-shot.jpg',
-        width: 1257,
-        height: 623,
+        url: '/portfolio-thumbnail.jpg',
+        width: 796,
+        height: 796,
       },
     ],
-    locale: 'he',
+    locale: 'en',
     type: 'website',
   },
   robots: {
@@ -33,18 +33,18 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/logo-icon.png',
+    icon: '/icon.png',
   },
   twitter: {
-    title: 'תנאי שימוש - מ.י אלומיניום',
-    description: 'תנאי שימוש עבור אתר מ.י אלומיניום',
-    images: ['/closeup-shot.jpg'],
+    title: 'Terms of Use - Adir Barak',
+    description: "The terms of use for Adir Barak's portfolio website.",
+    images: ['/portfolio-thumbnail.jpg'],
   },
-  category: 'אלומיניום',
+  category: 'portfolio',
 };
 
 export const viewport: Viewport = {
-  themeColor: 'black',
+  themeColor: '#9B15F4',
 };
 
 type Props = {};

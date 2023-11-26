@@ -13,7 +13,7 @@ export default function Resume({}: Props) {
       <h3 className='section-title'>
         My Past, Present, and... <span className='font-extralight'>Future?</span>{' '}
         <Link
-          href='/test.pdf'
+          href='/Adir Barak - Resume.pdf'
           target='_blank'
           rel='noopener noreferrer'
           className='inline-block w-fit h-fit text-red-500 cursor-pointer'>

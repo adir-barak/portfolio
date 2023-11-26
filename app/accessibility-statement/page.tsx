@@ -2,49 +2,49 @@ import { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'הצהרת נגישות - מ.י אלומיניום',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['אלומיניום', 'אלומיניום ירושלים', 'חלונות', 'תריסים', 'הרכבה אישית', 'אבי יעל'],
-  description: 'הצהרת נגישות עבור אתר מ.י אלומיניום',
-  metadataBase: new URL('https://m-i-aluminium.vercel.app/'),
-  openGraph: {
-    title: 'הצהרת נגישות - מ.י אלומיניום',
-    description: 'הצהרת נגישות עבור אתר מ.י אלומיניום',
-    siteName: 'מ.י אלומיניום',
-    images: [
-      {
-        url: '/closeup-shot.jpg',
-        width: 1257,
-        height: 623,
-      },
-    ],
-    locale: 'he',
-    type: 'website',
-  },
-  robots: {
+  title: 'Accessibility Statement - Adir Barak',
+referrer: 'origin-when-cross-origin',
+keywords: ['adir barak', 'portfolio', 'programmer', 'resume', 'developer'],
+  description: "The accessibility statement for Adir Barak's portfolio website.",
+metadataBase: new URL('https://adirbarak.com/'),
+openGraph: {
+  title: 'Accessibility Statement - Adir Barak',
+  description: "The accessibility statement for Adir Barak's portfolio website.",
+  siteName: 'Adir Barak',
+  images: [
+    {
+      url: '/portfolio-thumbnail.jpg',
+      width: 796,
+      height: 796,
+    },
+  ],
+  locale: 'en',
+  type: 'website',
+},
+robots: {
+  index: true,
+  follow: true,
+  nocache: true,
+  googleBot: {
     index: true,
     follow: true,
     nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      nocache: true,
-      noimageindex: true,
-    },
+    noimageindex: true,
   },
-  icons: {
-    icon: '/logo-icon.png',
-  },
-  twitter: {
-    title: 'הצהרת נגישות - מ.י אלומיניום',
-    description: 'הצהרת נגישות עבור אתר מ.י אלומיניום',
-    images: ['/closeup-shot.jpg'],
-  },
-  category: 'אלומיניום',
+},
+icons: {
+  icon: '/icon.png',
+},
+twitter: {
+  title: 'Accessibility Statement - Adir Barak',
+  description: "The accessibility statement for Adir Barak's portfolio website.",
+  images: ['/portfolio-thumbnail.jpg'],
+},
+category: 'portfolio',
 };
 
 export const viewport: Viewport = {
-  themeColor: 'black',
+themeColor: '#9B15F4',
 };
 
 type Props = {};

@@ -42,7 +42,9 @@ export default function HeroImage({}: Props) {
         className='hero-img-special'
         style={{ width: `${value}%` }}
       />
-      <Image priority={true} src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
+      <div className='hero-img-base relative -z-50'>
+        <Image priority={true} src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
+      </div>
     </div>
   );
 }

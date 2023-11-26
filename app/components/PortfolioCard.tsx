@@ -26,12 +26,20 @@ export default function PortfolioCard({ point }: Props) {
           {point.subTitle}
           <div className='portfolio-card-links'>
             {point?.link && (
-              <Link href={point.link} target='_blank' className='portfolio-card-link'>
+              <Link
+                href={point.link}
+                target='_blank'
+                className='portfolio-card-link'
+                aria-label="link to the project's live demo">
                 <ArrowSquareOut className='inline' />
               </Link>
             )}
             {point?.github && (
-              <Link href={point?.github} target='_blank' className='portfolio-card-link'>
+              <Link
+                href={point?.github}
+                target='_blank'
+                className='portfolio-card-link'
+                aria-label="link to the project's github page">
                 <GithubLogo className='inline' />
               </Link>
             )}
