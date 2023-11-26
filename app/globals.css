@@ -109,6 +109,9 @@
   .nav.open {
     @apply h-80 lg:h-full;
   }
+  .nav.open.partial {
+    @apply h-32;
+  }
   .nav-list {
     @apply text-center w-full mx-auto;
   }

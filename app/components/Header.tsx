@@ -23,7 +23,7 @@ export default function Header({}: Props) {
           {menuIsOpen ? <X className='inline' /> : <ClipboardText className='inline' />}
         </button>
 
-        <nav className={`nav lg:nav-lg ${menuIsOpen ? 'open' : ''}`}>
+        <nav className={`nav lg:nav-lg ${menuIsOpen ? 'open' : ''} ${pathname !== '/' ? 'partial' : ''}`}>
           <ul className='nav-list lg:nav-list-lg'>
             {pathname === '/' ? (
               <>
@@ -67,8 +67,7 @@ export default function Header({}: Props) {
                     href='https://www.linkedin.com/in/adir-barak'
                     target='_blank'
                     aria-label='link to my linkedin profile'
-                    className='nav-list-link'
-                    onClick={toggleMenu}>
+                    className='nav-list-link'>
                     <LinkedinLogo />
                   </Link>
                 </li>
@@ -77,8 +76,7 @@ export default function Header({}: Props) {
                     href='https://github.com/adir-barak'
                     target='_blank'
                     aria-label='link to my github profile'
-                    className='nav-list-link'
-                    onClick={toggleMenu}>
+                    className='nav-list-link'>
                     <GithubLogo />
                   </Link>
                 </li>
@@ -87,8 +85,7 @@ export default function Header({}: Props) {
                     href='mailto:Adir.Barak@mail.huji.ac.il'
                     target='_blank'
                     aria-label='link to contact me via email'
-                    className='nav-list-link'
-                    onClick={toggleMenu}>
+                    className='nav-list-link'>
                     <Envelope />
                   </Link>
                 </li>
