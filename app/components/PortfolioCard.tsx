@@ -18,7 +18,7 @@ type Props = {
 
 export default function PortfolioCard({ point }: Props) {
   return (
-    <article className='portfolio-card'>
+    <article className='portfolio-card fade-from-left'>
       <h4 className='portfolio-card-title'>{point.title}</h4>
 
       <div className='portfolio-card-content'>

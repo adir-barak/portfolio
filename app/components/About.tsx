@@ -5,8 +5,8 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <section id='about' className='section fade-in'>
-      <h3 className='section-title'>About</h3>
+    <section id='about' className='section'>
+      <h3 className='section-title fade-in'>About</h3>
       <div className='about-articles-container'>
         <article className='fade-from-left'>
           <h4 className='about-sub-title'>Let&apos;s. get. personal.</h4>

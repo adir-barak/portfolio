@@ -6,8 +6,8 @@ type Props = {};
 export default function Portfolio({}: Props) {
   const data = portfolioData.data;
   return (
-    <section id='portfolio' className='section fade-from-left'>
-      <h3 className='section-title'>Portfolio</h3>
+    <section id='portfolio' className='section'>
+      <h3 className='section-title fade-in'>Portfolio</h3>
       <div className='portfolio-cards-container'>
         {data.map((point, i) => {
           return <PortfolioCard key={i} point={point} />;
