@@ -52,7 +52,7 @@ type Props = {};
 export default function page({}: Props) {
   return (
     <main id='top' className='technical-article'>
-      <h1>Accessibility statement</h1>
+      <h1>Accessibility Statement</h1>
       <section>
         <p>
           Welcome to <Link href='/'>Adir Barak&apos;s</Link> portfolio website.

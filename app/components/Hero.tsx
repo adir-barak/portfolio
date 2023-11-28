@@ -51,9 +51,7 @@ export default function Hero({}: Props) {
           </ScrollToLink>
         </div>
       </article>
-      {/* <div aria-hidden={true} className='hero-decor a'></div>
-      <div aria-hidden={true} className='hero-decor b'></div>
-      <div aria-hidden={true} className='hero-decor c'></div> */}
+      {/* <div aria-hidden={true} className='hero-decor'></div> */}
     </section>
   );
 }

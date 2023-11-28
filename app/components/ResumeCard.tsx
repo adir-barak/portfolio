@@ -31,7 +31,7 @@ export default function ResumeCard({ point }: Props) {
           {point.start}
           {point.end ? ` - ${point.end}` : ''}
         </p>
-        <button className='resume-card-toggle-button' onClick={toggleCard}>
+        <button className='resume-card-toggle-button button' onClick={toggleCard}>
           <CaretDown className={`transition-all ${isCardOpen && 'rotate-180'} inline`} />
         </button>
       </div>
@@ -43,9 +43,9 @@ export default function ResumeCard({ point }: Props) {
                 {bullet}
               </li>
             ))}
-            <ScrollToLink href={`#resume-card-${point.id}`} onClick={toggleCard} className='resume-card-toggle-button sm:hidden'>
+            {/* <ScrollToLink href={`#resume-card-${point.id}`} onClick={toggleCard} className='resume-card-toggle-button sm:hidden'>
               <CaretUp className='inline' />
-            </ScrollToLink>
+            </ScrollToLink> */}
           </>
         }
       </ul>

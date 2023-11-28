@@ -30,7 +30,7 @@
     @apply invert;
   }
   .body.emphasizeLinks > * a {
-    @apply bg-yellow-400;
+    @apply bg-yellow-500;
   }
   .body.accessibleFont > * {
     @apply font-serif;
@@ -60,33 +60,72 @@
     @apply mx-6 sm:mx-10 md:mx-16 lg:mx-28 xl:mx-40 mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12;
   }
   .section-title {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light md:font-extralight mb-1 lg:mb-2;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light md:font-extralight mb-1 lg:mb-2 -tracking-wide;
   }
 
   .accessibility-menu {
-    @apply fixed bottom-8 left-2 z-50 md:bottom-4 md:left-4 flex flex-col text-secondary-2;
+    @apply fixed bottom-8 left-2 z-50 md:bottom-4 md:left-4 flex flex-col text-main-0;
   }
   .accessibility-menu-content {
     @apply hidden;
   }
   .accessibility-menu.open .accessibility-menu-content {
-    @apply flex flex-col gap-2 bg-secondary-0 p-2 border-secondary-2 border max-h-[448px] overflow-y-scroll;
+    @apply flex flex-col gap-2 bg-secondary-2 p-2  max-h-[448px] overflow-y-scroll;
   }
   .accessibility-menu-item {
-    @apply text-center block border-secondary-2 border px-2;
+    @apply text-center block border-main-0 border px-2 rounded-sm;
+  }
+  .accessibility-menu-item:hover {
+    @apply text-center block border-main-0 border px-2 bg-secondary-1;
+  }
+  .body.monochrome .accessibility-menu-item.monochrome {
+    @apply bg-secondary-1 font-bold;
+  }
+  .body.inverted .accessibility-menu-item.inverted {
+    @apply bg-secondary-1 font-bold;
+  }
+  .body.emphasizeLinks .accessibility-menu-item.emphasizeLinks {
+    @apply bg-secondary-1 font-bold;
+  }
+  .body.accessibleFont .accessibility-menu-item.accessibleFont {
+    @apply bg-secondary-1 font-bold;
   }
   .accessibility-toggle-button {
-    @apply border-main-1 cursor-pointer bg-blue-500 rounded-full aspect-square grid place-items-center border-4 self-start text-main-0 w-11 p-1 text-xl sm:w-14 sm:p-2 sm:text-3xl;
+    @apply border-main-4 cursor-pointer bg-blue-500 rounded-full aspect-square grid place-items-center border-4 self-start text-main-0 w-11 p-1 text-xl sm:w-14 sm:p-2 sm:text-3xl;
+  }
+  /* .accessibility-menu-item-checkmark */
+  .accessibility-menu-item-checkmark {
+    @apply hidden;
+  }
+  .body.monochrome .accessibility-menu-item-checkmark.monochrome {
+    @apply inline;
+  }
+  .body.inverted .accessibility-menu-item-checkmark.inverted {
+    @apply inline;
+  }
+  .body.emphasizeLinks .accessibility-menu-item-checkmark.emphasizeLinks {
+    @apply inline;
+  }
+  .body.accessibleFont .accessibility-menu-item-checkmark.accessibleFont {
+    @apply inline;
   }
 }
 
 @layer components {
   /* --- Header --- */
   header {
-    @apply sticky top-0 z-50 bg-secondary-1 text-main-0;
+    /* @apply sticky top-0 z-50 bg-secondary-1 text-main-0; */
+    @apply sticky top-0 z-50 text-main-0;
+    background: linear-gradient(
+      90deg,
+      var(--secondary-2) 0%,
+      var(--secondary-1) 28%,
+      var(--secondary-1) 72%,
+      var(--secondary-2) 100%
+    );
   }
   .header-container {
-    @apply relative w-full h-16 flex flex-row justify-between items-center border-secondary-0 border-b-2 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-14;
+    @apply relative w-full h-16 flex flex-row justify-between items-center px-4 sm:px-6 md:px-10 lg:px-12 xl:px-14 shadow-md shadow-main-3;
   }
   .header-container-lg {
     @apply static;
@@ -96,7 +135,7 @@
     @apply text-3xl p-1 grid place-content-center transition-transform ease-in;
   }
   .nav-button:hover {
-    @apply rotate-6 text-secondary-2;
+    @apply rotate-6 text-secondary-0;
   }
   /* --- Header -> nav --- */
   .nav {
@@ -116,19 +155,28 @@
     @apply text-center w-full mx-auto;
   }
   .nav-list-lg {
-    @apply flex flex-row m-0 w-full justify-end items-center gap-6 xl:gap-12;
+    @apply flex flex-row m-0 w-full items-center gap-6 xl:gap-12 h-full;
   }
   .nav-list > li {
     @apply text-xl py-4;
   }
+  .nav-list-lg > li {
+    @apply py-0;
+  }
   .nav-list > li:not(:last-child) {
     @apply border-secondary-1 border-b-2 lg:border-0;
   }
+  .nav-list-link {
+    @apply transition-transform inline-block;
+  }
   .nav-list-link:hover {
-    @apply text-secondary-0;
+    @apply text-secondary-0 scale-105 inline-block;
   }
   .nav-list-icons {
-    @apply text-4xl flex flex-row justify-evenly items-center lg:gap-4 xl:gap-8;
+    @apply text-4xl flex flex-row justify-evenly items-center lg:gap-4 xl:gap-8 h-full;
+  }
+  .nav-list-lg .nav-list-icons > * {
+    @apply grid place-items-center;
   }
 
   /* --- HeroImage --- */
@@ -195,35 +243,31 @@
     @apply w-full;
   }
   /* --- Hero -> hero-decor: --- */
-  /* .hero-decor {
-    @apply absolute bg-secondary-1 aspect-square rounded-full -z-10 border-t-[12px] border-t-secondary-0 border-b-8 border-b-secondary-2;
-  }
-  .hero-decor.a {
-    @apply -top-1/4 left-3/4 w-[20vw] ;
-  }
-  .hero-decor.b {
-    @apply top-1/2 left-1/4 w-[25vw]; 
-  }
-  .hero-decor.c {
-    @apply top-3/4 left-full w-[30vw] ;
-  } */
 
   /* --- Resume --- */
+  .resume-section-title {
+    @apply lg:-mt-44 xl:-mt-60;
+  }
   /* --- Resume -> resume-cards-container: --- */
   .resume-cards-container {
     @apply relative lg:left-1/2 lg:w-1/2;
   }
   .resume-cards-container::before {
-    @apply content-[''] absolute w-1 sm:w-1.5 h-full bg-secondary-1 z-10 rounded-l-full sm:-left-[3px] lg:rounded-full;
+    @apply content-[''] absolute w-1 sm:w-1.5 h-full z-10 rounded-l-full sm:-left-[3px] lg:rounded-full;
+    background-image: linear-gradient(30deg, var(--secondary-1) 8%, var(--secondary-0) 64%, var(--secondary-1) 92%);
   }
 
   /* --- ResumeCard --- */
   /* --- ResumeCard -> resume-card: --- */
   .resume-card {
-    @apply rounded-sm mb-2 border-secondary-2 border-b-2 border-dashed relative sm:text-lg max-w-3xl;
+    @apply rounded-[4px] lg:rounded-md mb-4 border-t-4 border-t-secondary-1  relative sm:text-lg max-w-3xl lg:m-0 shadow-lg lg:shadow-xl  sm:p-2 md:p-4 shadow-main-2 lg:shadow-main-2;
+  }
+  .resume-card::after {
+    @apply content-[''] block absolute inset-0 w-full h-full bg-main-0 bg-opacity-60 backdrop-blur-sm -z-10
   }
   .resume-card::before {
-    @apply content-[''] absolute w-3 h-3 sm:w-4 sm:h-4 bg-secondary-0 rounded-full top-4 -left-1 sm:-left-2 z-20 border-2 border-secondary-1;
+    @apply content-[''] absolute w-3 h-3 sm:w-4 sm:h-4  rounded-full top-[18px] sm:top-[26px] md:top-[34px] -left-[5px] sm:-left-2 z-20;
+    background-image: radial-gradient(circle, var(--main-0) 8%, var(--secondary-1) 64%);
   }
   .resume-card.alt {
     @apply right-full;
@@ -248,7 +292,10 @@
     @apply font-light text-main-3 text-sm;
   }
   .resume-card-toggle-button {
-    @apply mx-auto block w-fit h-fit text-2xl md:text-3xl lg:text-4xl;
+    @apply mx-auto mb-2 grid place-items-center w-14 sm:w-16 md:w-20 h-fit text-2xl md:text-3xl bg-main-4 rounded-full text-main-0 overflow-hidden p-0 mt-0;
+  }
+  .resume-decor {
+    @apply text-secondary-0 sticky top-1/3 -z-[100] whitespace-nowrap lg:text-9xl xl:text-[192px] inline-block lg:mt-6 xl:mt-14;
   }
   /* --- ResumeCard -> resume-card-content: --- */
   /* .resume-card-content {
@@ -269,10 +316,19 @@
   }
   /* --- PortfolioCard -> portfolio-card: --- */
   .portfolio-card {
-    @apply mb-2 border-secondary-2 border-2 rounded-sm overflow-hidden sm:text-lg lg:border lg:m-0;
+    @apply mb-2 border-secondary-2 border-x-2 border-b-4 sm:border-b-8 overflow-hidden rounded-md sm:text-lg lg:m-0 shadow-xl sm:shadow-2xl shadow-main-2 sm:shadow-main-2;
   }
   .portfolio-card-title {
-    @apply font-semibold text-lg text-center lg:text-xl xl:text-2xl xl:font-medium;
+    @apply font-semibold text-lg text-center lg:text-xl xl:text-2xl xl:font-medium text-main-0 tracking-wider;
+    /* background-image: rgb(64, 14, 104);
+    background-image: -moz-linear-gradient(45deg, rgba(64, 14, 104, 1) 62%, rgba(218, 166, 248, 1) 69%, rgba(64, 14, 104, 1) 76%);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(64, 14, 104, 1) 62%,
+      rgba(218, 166, 248, 1) 69%,
+      rgba(64, 14, 104, 1) 76%
+    ); */
+    background-image: linear-gradient(30deg, #400e68 2%, #9b15f4 64%, #400e68 98%);
   }
   /* .portfolio-card-subtitle {
     @apply border-b-2 pb-2 border-secondary-0;
@@ -283,7 +339,7 @@
     @apply w-fit h-fit ml-auto text-3xl flex flex-row justify-center items-center gap-1;
   }
   .portfolio-card-link {
-    @apply w-fit h-fit cursor-pointer hover:text-main-0;
+    @apply w-fit h-fit cursor-pointer hover:text-main-0 hover:scale-125 transition-transform;
   }
   /* --- PortfolioCard -> portfolio-card-content: --- */
   .portfolio-card-content {
@@ -293,14 +349,14 @@
     @apply content-[''] block absolute left-0 top-0 h-full w-full bg-secondary-2 opacity-0 transition-opacity -z-10;
   }
   .portfolio-card-content:hover::before {
-    @apply opacity-75;
+    @apply opacity-90;
   }
   .portfolio-card-content:hover .portfilio-card-thumbnail {
-    @apply opacity-75 -z-20 blur-lg;
+    @apply -z-20 blur-sm;
   }
   /* --- PortfolioCard -> portfolio-card-thumbnail: --- */
   .portfilio-card-thumbnail {
-    @apply absolute left-0 top-0 h-full w-full object-top object-cover opacity-100 transition-opacity bg-main-0;
+    @apply absolute left-0 top-0 h-full w-full object-top object-cover transition-all bg-main-0;
   }
   /* .portfilio-card-bullet {
     @apply font-normal;
@@ -310,7 +366,7 @@
     @apply flex flex-row flex-wrap gap-2 mt-2 text-sm;
   }
   .portfolio-card-tool {
-    @apply border border-secondary-0 rounded-md py-1 px-2 pointer-events-none;
+    @apply border border-secondary-0 rounded-md py-1 px-2 pointer-events-none tracking-wider;
   }
 
   /* --- ImagesSlideshow --- */
@@ -332,10 +388,10 @@
     @apply w-fit ml-auto;
   }
   .text-pager-button {
-    @apply border border-secondary-0;
+    @apply border border-secondary-0 transition-transform;
   }
   .text-pager-button:hover {
-    @apply text-main-0 border-main-0;
+    @apply text-main-0 border-main-0 scale-125;
   }
   /* --- TextPager -> text-pager-info: --- */
   .text-pager-info {
@@ -376,14 +432,23 @@
 
   /* --- Footer --- */
   footer {
-    @apply bg-secondary-0 relative pt-10 text-secondary-2 font-medium px-4 text-sm mt-12 lg:pt-12;
+    @apply relative pt-10 text-main-0 font-medium px-4 text-sm mt-12 lg:pt-12;
+    /* background: linear-gradient(
+      30deg,
+      var(--secondary-2) 0%,
+      var(--secondary-1) 28%,
+      var(--secondary-1) 72%,
+      var(--secondary-2) 100%
+    ); */
+    background: linear-gradient(16deg, var(--secondary-2) 0%, var(--secondary-1) 64%);
   }
   /* --- Footer -> footer-back-to-top: --- */
   .footer-back-to-top {
-    @apply font-normal absolute top-0 left-1/2 bg-secondary-0 text-main-0 rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform text-6xl grid place-content-center md:text-7xl lg:text-8xl;
+    @apply font-normal absolute top-0 left-1/2  text-main-0 rounded-full -translate-x-1/2 -translate-y-1/2 transition-all text-6xl grid place-content-center md:text-7xl lg:text-8xl shadow-2xl shadow-main-3 opacity-80;
+    background-image: linear-gradient(30deg, var(--secondary-2) 0%, var(--secondary-1) 64%);
   }
   .footer-back-to-top:hover {
-    @apply -translate-y-3/4;
+    @apply -translate-y-3/4 opacity-100;
   }
   /* --- Footer -> footer-title: --- */
   .footer-title {
@@ -398,7 +463,7 @@
   }
   /* --- Footer -> footer-links: --- */
   .footer-links {
-    @apply flex flex-col justify-evenly items-center mx-auto font-semibold gap-1 py-2 border-y border-secondary-2 max-w-3xl sm:flex-row;
+    @apply flex flex-col justify-evenly items-center mx-auto font-semibold gap-1 py-2 border-y border-main-0 max-w-3xl sm:flex-row;
   }
   .footer-link {
     @apply block w-fit h-fit;

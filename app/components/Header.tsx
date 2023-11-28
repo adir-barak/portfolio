@@ -14,7 +14,7 @@ export default function Header({}: Props) {
     setMenuIsOpen((prev) => !prev);
   };
   return (
-    <header>
+    <header className='lg:.header-gradient-lg'>
       <div className='header-container lg:header-container-lg'>
         <Link href='/' aria-label='link to homepage' className='text-lg sm:text-xl md:text-2xl'>
           ADIR BARAK
@@ -24,7 +24,7 @@ export default function Header({}: Props) {
         </button>
 
         <nav className={`nav lg:nav-lg ${menuIsOpen ? 'open' : ''} ${pathname !== '/' ? 'partial' : ''}`}>
-          <ul className='nav-list lg:nav-list-lg'>
+          <menu className='nav-list lg:nav-list-lg'>
             {pathname === '/' ? (
               <>
                 <li>
@@ -67,7 +67,7 @@ export default function Header({}: Props) {
                     href='https://www.linkedin.com/in/adir-barak'
                     target='_blank'
                     aria-label='link to my linkedin profile'
-                    className='nav-list-link'>
+                    className='nav-list-link inline-block'>
                     <LinkedinLogo />
                   </Link>
                 </li>
@@ -76,7 +76,7 @@ export default function Header({}: Props) {
                     href='https://github.com/adir-barak'
                     target='_blank'
                     aria-label='link to my github profile'
-                    className='nav-list-link'>
+                    className='nav-list-link inline-block'>
                     <GithubLogo />
                   </Link>
                 </li>
@@ -85,13 +85,13 @@ export default function Header({}: Props) {
                     href='mailto:Adir.Barak@mail.huji.ac.il'
                     target='_blank'
                     aria-label='link to contact me via email'
-                    className='nav-list-link'>
+                    className='nav-list-link inline-block'>
                     <Envelope />
                   </Link>
                 </li>
               </ul>
             </li>
-          </ul>
+          </menu>
         </nav>
       </div>
     </header>

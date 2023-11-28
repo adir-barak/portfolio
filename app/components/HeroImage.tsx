@@ -25,7 +25,7 @@ export default function HeroImage({}: Props) {
     //   </div>
     // </div>
     <div
-      className='hero-img-container'
+      className='hero-img-container select-none cursor-crosshair'
       onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => {
         const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
         const relativeX = e.clientX - rect.left;
@@ -39,10 +39,10 @@ export default function HeroImage({}: Props) {
         alt='A picture of me'
         width={1889}
         height={1757}
-        className='hero-img-special'
+        className='hero-img-special '
         style={{ width: `${value}%` }}
       />
-      <div className='hero-img-base relative -z-50'>
+      <div className='hero-img-base relative -z-50 '>
         <Image priority={true} src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
       </div>
     </div>

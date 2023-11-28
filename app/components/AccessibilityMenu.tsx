@@ -125,20 +125,28 @@ export default function AccessibilityMenu({}: Props) {
             Home
           </Link>
         )}
-        <button id='monochrome' name='monochrome' onClick={toggleClassList} className='accessibility-menu-item'>
-          {/* {accessibilityFeatures.monochrome && <span>&#x2713; </span>} */}
+        <button id='monochrome' name='monochrome' onClick={toggleClassList} className='accessibility-menu-item monochrome'>
+          <span className='accessibility-menu-item-checkmark monochrome'>&#x2713; </span>
           Monochrome
         </button>
-        <button id='inverted' name='inverted' onClick={toggleClassList} className='accessibility-menu-item'>
-          {/* {accessibilityFeatures.inverted && <span>&#x2713; </span>} */}
+        <button id='inverted' name='inverted' onClick={toggleClassList} className='accessibility-menu-item inverted'>
+          <span className='accessibility-menu-item-checkmark inverted'>&#x2713; </span>
           Invert Colors
         </button>
-        <button id='emphasizeLinks' name='emphasizeLinks' onClick={toggleClassList} className='accessibility-menu-item'>
-          {/* {accessibilityFeatures.emphasizeLinks && <span>&#x2713; </span>} */}
+        <button
+          id='emphasizeLinks'
+          name='emphasizeLinks'
+          onClick={toggleClassList}
+          className='accessibility-menu-item emphasizeLinks'>
+          <span className='accessibility-menu-item-checkmark emphasizeLinks'>&#x2713; </span>
           Emphasize Links
         </button>
-        <button id='accessibleFont' name='accessibleFont' onClick={toggleClassList} className='accessibility-menu-item'>
-          {/* {accessibilityFeatures.accessibleFont && <span>&#x2713; </span>} */}
+        <button
+          id='accessibleFont'
+          name='accessibleFont'
+          onClick={toggleClassList}
+          className='accessibility-menu-item accessibleFont'>
+          <span className='accessibility-menu-item-checkmark accessibleFont'>&#x2713; </span>
           Accessible Font
         </button>
         <button id='reset' name='reset' onClick={resetClassList} className='accessibility-menu-item'>
