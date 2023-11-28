@@ -13,15 +13,13 @@ export default function Hero({}: Props) {
       <article className='hero-section-article'>
         <div>
           <h1 className='hero-title'>
-            {/* PROBLEM
-            <br />
-            SOLVER. */}
             SOLVING
             <br />
             PROBLEMS.
           </h1>
-          {/* <h2 className='hero-subtitle'>That&apos;s who I am.</h2> */}
-          <h2 className='hero-subtitle'>That&apos;s what I do.</h2>
+          <h2 className='hero-subtitle'>
+            That&apos;s what I do<span className='text-secondary-1'>.</span>
+          </h2>
         </div>
         <div>
           <p className='hero-p'>
@@ -51,7 +49,6 @@ export default function Hero({}: Props) {
           </ScrollToLink>
         </div>
       </article>
-      {/* <div aria-hidden={true} className='hero-decor'></div> */}
     </section>
   );
 }

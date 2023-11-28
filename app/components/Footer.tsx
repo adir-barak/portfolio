@@ -14,7 +14,7 @@ export default function Footer({}: Props) {
       </ScrollToLink>
       <ContactBox />
       <h3 className='footer-title'>
-        Say hello or contact me directly via{' '}
+        Say Hello or contact me directly via{' '}
         <Link href='mailto:Adir.Barak@mail.huji.ac.il'>
           <em>Adir.Barak@mail.huji.ac.il</em>
         </Link>
