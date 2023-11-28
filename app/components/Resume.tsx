@@ -9,7 +9,7 @@ type Props = {};
 export default function Resume({}: Props) {
   const data = resumeData.data;
   return (
-    <section id='resume' className='section'>
+    <section id='resume' className='section fade-from-left'>
       <span aria-hidden={true} className='hidden lg:resume-decor'>
         MY RESUME
       </span>

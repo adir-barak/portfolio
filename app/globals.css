@@ -54,26 +54,35 @@
   .button .button-icon {
     @apply inline-block text-2xl ml-2 text-secondary-0 sm:text-3xl lg:text-4xl;
   }
-  .section {
+  .fade-from-left {
     @apply transition-transform;
-    animation: fade 1s both linear 0s;
+    animation: fadeFromLeft 1s both linear 0s;
     animation-timeline: view();
   }
-  .section.alt {
-    animation: fadeAlt 1s both linear 0s;
-    animation-timeline: view();
-  }
-  @keyframes fade {
+  @keyframes fadeFromLeft {
     0% {
       opacity: 0;
-      transform: translateX(100%);
+      transform: translateX(-50%);
     }
     25% {
       opacity: 1;
       transform: translateX(0%);
     }
   }
-  @keyframes fadeAlt {
+  .fade-in {
+    @apply transition-transform;
+    animation: fadeIn 1s both linear 0s;
+    animation-timeline: view();
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+  }
+  /* @keyframes fadeAlt {
     0% {
       opacity: 0;
       transform: translateX(-50%);
@@ -83,6 +92,14 @@
       transform: translateX(0%);
     }
   }
+  @keyframes fadeOnly {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+  } */
   .section,
   .hero-section-article,
   main.technical-article {
@@ -285,7 +302,6 @@
   .hero-emphasis:hover::after {
     @apply w-full;
   }
-
 
   /* --- Resume --- */
   .resume-section-title {

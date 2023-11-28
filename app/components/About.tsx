@@ -5,10 +5,10 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <section id='about' className='section'>
+    <section id='about' className='section fade-in'>
       <h3 className='section-title'>About</h3>
       <div className='about-articles-container'>
-        <article>
+        <article className='fade-from-left'>
           <h4 className='about-sub-title'>Let&apos;s. get. personal.</h4>
           <p className='about-p'>
             I&apos;m Adir.
@@ -18,22 +18,22 @@ export default function About({}: Props) {
               <Counter />
             </span>{' '}
             seconds to pick the perfect birthday gift – <em className='extra'>no pressure</em>.<br />
-            I&apos;m the youngest of three but the first to go in the academic route, currently navigating the world of <em>Computer
-            Science</em> as a student at The Hebrew University of Jerusalem.
+            I&apos;m the youngest of three but the first to go in the academic route, currently navigating the world of{' '}
+            <em>Computer Science</em> as a student at The Hebrew University of Jerusalem.
           </p>
           <p className='about-p'>
-            When I&apos;m not searching for bugs in my code, you&apos;ll find me either drumming or strumming the guitar because <em>music</em> is a
-            huge passion of mine.
+            When I&apos;m not searching for bugs in my code, you&apos;ll find me either drumming or strumming the guitar because{' '}
+            <em>music</em> is a huge passion of mine.
             <br />
-            <em>Video games, constant learning, exercising, and quality time with my nephews</em> also rank high up on my &apos;Things I Enjoy&apos;
-            list.
+            <em>Video games, constant learning, exercising, and quality time with my nephews</em> also rank high up on my
+            &apos;Things I Enjoy&apos; list.
           </p>
           <p className='about-p'>
             I&apos;m also deeply intrigued by the realms of <em>business, philosophy, psychology, and science</em>.
             <br />I find myself thinking or learning about them almost everyday.
           </p>
         </article>
-        <article>
+        <article className='fade-from-left'>
           <h5 className='about-recommendations-title'>My recommendations:</h5>
           <ul className='about-recommendations-list'>
             <li>
