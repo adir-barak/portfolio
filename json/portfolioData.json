@@ -91,7 +91,26 @@
         { "src": "/mi-aluminium-5.jpg", "alt": "m.i-aluminium-demo-5", "width": "960", "height": "540" },
         { "src": "/mi-aluminium-6.jpg", "alt": "m.i-aluminium-demo-6", "width": "960", "height": "540" }
       ],
-      "link": "https://m-i-aluminium.vercel.app/#hero"
+      "link": "https://m-i-aluminium.vercel.app/"
+    },
+    {
+      "title": "Pic-2-ASCII",
+      "subTitle": "A fun little program that takes in a photo in .PNG, .JPG, or .BMP and then outputs an ASCII rendition of it.",
+      "tools": ["C / C++", "CLI", "ASCII", "Images", "stb-headers", "fun"],
+      "bullets": [
+        "Constructed the program to seamlessly accept images in popular formats (png, jpg, or bmp), for versatility & convenience.",
+        "Leveraged the powerful stb-headers to handle the intricate process of reading images, focusing on simplicity.",
+        "Ensured a user-friendly CLI interface, allowing users to effortlessly engage with the program and enjoy captivating ASCII renditions of their images."
+      ],
+      "thumbnails": [
+        { "src": "/pic2ASCII-1.png", "alt": "pic-2-ASCII-1", "width": "1963", "height": "915" },
+        { "src": "/pic2ASCII-2.png", "alt": "pic-2-ASCII-2", "width": "1356", "height": "913" },
+        { "src": "/pic2ASCII-3.png", "alt": "pic-2-ASCII-3", "width": "1608", "height": "913" },
+        { "src": "/pic2ASCII-4.png", "alt": "pic-2-ASCII-4", "width": "1361", "height": "914" },
+        { "src": "/pic2ASCII-5.png", "alt": "pic-2-ASCII-5", "width": "1362", "height": "916" },
+        { "src": "/pic2ASCII-6.png", "alt": "pic-2-ASCII-6", "width": "1359", "height": "915" }
+      ],
+      "github": "https://github.com/adir-barak/pic-2-ascii"
     },
     {
       "title": "Portfolio Website",
