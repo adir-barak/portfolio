@@ -43,7 +43,7 @@ export default function About({}: Props) {
               <em>TV Shows:</em> Boardwalk Empire, The Good Place, One Piece.
             </li>
             <li>
-              <em>Movies:</em> Bullet Train, American History X, Papillon
+              <em>Movies:</em> Bullet Train, Life Is Beautiful, Papillon
               <span className='about-recommendations-note'>(1973)</span>.
             </li>
             <li>
