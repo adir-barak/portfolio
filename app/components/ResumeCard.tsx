@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import ScrollToLink from './ScrollToLink';
 import { CaretDown, CaretUp } from '@phosphor-icons/react/dist/ssr';
 
 type Props = {
@@ -43,9 +42,6 @@ export default function ResumeCard({ point }: Props) {
                 {bullet}
               </li>
             ))}
-            {/* <ScrollToLink href={`#resume-card-${point.id}`} onClick={toggleCard} className='resume-card-toggle-button sm:hidden'>
-              <CaretUp className='inline' />
-            </ScrollToLink> */}
           </>
         }
       </ul>

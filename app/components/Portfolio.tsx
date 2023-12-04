@@ -1,10 +1,9 @@
 import portfolioData from '@/json/portfolioData.json';
-import Image from 'next/image';
 import PortfolioCard from './PortfolioCard';
 type Props = {};
 
 export default function Portfolio({}: Props) {
-  const data = portfolioData.data;
+  const data = portfolioData.data; // extracts the portfolio's objects array 'data'
   return (
     <section id='portfolio' className='section'>
       <h3 className='section-title fade-in'>Portfolio</h3>

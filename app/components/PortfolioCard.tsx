@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import TextPager from './TextPager';
 import { ArrowSquareOut, GithubLogo } from '@phosphor-icons/react/dist/ssr';
@@ -45,7 +44,6 @@ export default function PortfolioCard({ point }: Props) {
             )}
           </div>
         </h5>
-        {/* <Image src={point.thumbnail} alt='alt' width={400} height={400} className='portfilio-card-thumbnail' /> */}
         <div className='portfilio-card-thumbnail'>
           <ImagesSlideshow array={point.thumbnails} />
         </div>
