@@ -21,19 +21,19 @@ export default function HeroImage({}: Props) {
         // ensure it goes all the way from 0 to 100
         setValue(value > 50 ? Math.ceil(value) : Math.floor(value));
       }}>
-      {/* Dynamic Image component with a variable width based on the state value */}
-      <Image
-        priority={true}
-        src='/me-random.png'
-        alt='A picture of me'
-        width={1889}
-        height={1757}
-        className='hero-img-special '
-        style={{ width: `${value}%` }}
-      />
-      <div className='hero-img-base relative -z-50 '>
+      <div className='hero-img-base relative -z-50'>
         {/* Base Image component (non-dynamic) positioned behind the dynamic image */}
         <Image priority={true} src='/me-wordom.png' alt='A picture of me' width={1889} height={1757} className='hero-img-base' />
+        {/* Dynamic Image component with a variable width based on the state value */}
+        <Image
+          priority={true}
+          src='/me-random.png'
+          alt='A picture of me'
+          width={1889}
+          height={1757}
+          className='hero-img-special'
+          style={{ width: `${value}%` }}
+        />
       </div>
     </div>
   );
