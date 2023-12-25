@@ -32,9 +32,9 @@ export const metadata: Metadata = {
       noimageindex: true,
     },
   },
-  icons: {
-    icon: '/icon.png',
-  },
+  // icons: {
+  //   icon: '/icon.png',
+  // },
   twitter: {
     title: 'Sitemap - Adir Barak',
     description: "The sitemap for Adir Barak's portfolio website.",

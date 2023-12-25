@@ -32,9 +32,9 @@ robots: {
     noimageindex: true,
   },
 },
-icons: {
-  icon: '/icon.png',
-},
+// icons: {
+//   icon: '/icon.png',
+// },
 twitter: {
   title: 'Accessibility Statement - Adir Barak',
   description: "The accessibility statement for Adir Barak's portfolio website.",

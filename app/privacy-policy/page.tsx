@@ -32,9 +32,9 @@ robots: {
     noimageindex: true,
   },
 },
-icons: {
-  icon: '/icon.png',
-},
+// icons: {
+//   icon: '/icon.png',
+// },
 twitter: {
   title: 'Privacy Policy - Adir Barak',
   description: "The privacy policy for Adir Barak's portfolio website.",
@@ -90,7 +90,7 @@ export default function page({}: Props) {
         <p>
           Despite my efforts, it is not possible to guarantee absolute robustness against the intrusion of third parties into the
           communication that will be conducted between us. In the aforementioned case you will not have any claim, demand or claim
-          against us.
+          against me.
         </p>
       </section>
       <section>

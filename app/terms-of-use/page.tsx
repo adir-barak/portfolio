@@ -32,9 +32,9 @@ export const metadata: Metadata = {
       noimageindex: true,
     },
   },
-  icons: {
-    icon: '/icon.png',
-  },
+  // icons: {
+  //   icon: '/icon.png',
+  // },
   twitter: {
     title: 'Terms of Use - Adir Barak',
     description: "The terms of use for Adir Barak's portfolio website.",
@@ -128,7 +128,7 @@ export default function page({}: Props) {
         </p>
         <p>
           Some links on the site may be inaccurate or may not lead to the intended destination. If you encounter such problems,
-          please let me know, andIwill make efforts to address the problem. However, this does not indicate acceptance of
+          please let me know, and I will make efforts to address the problem. However, this does not indicate acceptance of
           responsibility.
         </p>
         <p>The site reserves the right to add or remove any link at any time, at Adir Barak&apos;s sole discretion.</p>
@@ -149,10 +149,10 @@ export default function page({}: Props) {
           exclusively to people who have actively applied and expressed their desire for it by filling out and sending the form.
           <br />
           In the event of a malfunction, where you receive mailings without filling out the &apos;Contact&apos; form, Please let
-          me know, andIwill take care of the problem immediately.
+          me know, and I will take care of the problem immediately.
         </p>
         <p>
-          Any information provided in the &quot;Contact&quot; form will not be share with others. It will be used exclusively by
+          Any information provided in the &quot;Contact&quot; form will not be shared with others. It will be used exclusively by
           the website and Adir Barak in order to establish communication.
         </p>
         <p>
@@ -222,12 +222,12 @@ export default function page({}: Props) {
         <p>You agree not to engage in the following actions:</p>
         <ul>
           <li>
-            When contacting us, provide full, complete and accurate information regarding your request, avoiding false
+            When contacting me, provide full, complete and accurate information regarding your request, avoiding false
             information.
           </li>
           <li>
             Attempting to manipulate the security system or defraud the site owner, including access to information not intended
-            for you or experimenting with the site&apos;s security system or in his networks.
+            for you or experimenting with the site&apos;s security system or in its networks.
           </li>
           <li>
             Access or perform operations on the site that may impose an unreasonable or disproportionate load on the site&apos;s
@@ -243,7 +243,7 @@ export default function page({}: Props) {
           </li>
           <li>
             Upload, send or transmit any material that contains any type of &apos;harm&apos;, computer virus or other code
-            designed to interfere with the use of computers, Servers, hardware and/or software used by or on behalf of the website
+            designed to interfere with the use of computers, servers, hardware and/or software used by or on behalf of the website
             owner.
           </li>
           <li>
@@ -291,14 +291,14 @@ export default function page({}: Props) {
         <h2>Repairs and faults on the website</h2>
         <p>
           Iencourage you to report any defects, errors, glitches, malfunctions, deficiencies, failure to update or omissions on
-          the site, andIwill endeavor to correct them in a timely manner reasonable with the knowledge of them. While I make
-          efforts to address such issues,Ido not guarantee that the website will be free of defects, service interruptions,
+          the site, and I will endeavor to correct them in a timely manner reasonable with the knowledge of them. While I make
+          efforts to address such issues, I do not guarantee that the website will be free of defects, service interruptions,
           content parts or any other malfunction. If you encounter such a defect, please report it to me using the
           &apos;Contact&apos; form, by phone or by email, providing details about the defect and its location.
         </p>
         <p>
           If you believe that your rights have been violated by any information and/or content published on the site, or if you
-          have detected an error, please notify me by providing references suitable for your claims.Iwill take appropriate actions
+          have detected an error, please notify me by providing references suitable for your claims. I will take appropriate actions
           to correct the situation if necessary.
         </p>
       </section>
@@ -333,7 +333,7 @@ export default function page({}: Props) {
         <p>
           I strive to maintain the confidentiality of user information on the website, including content and information
           transmitted by users when using the website as well as information collected About the users while browsing the website
-          (&apos;User Information&apos;). For example, communication with the site is protected under protection SSL.
+          (&apos;User Information&apos;). For example, communication with the site is protected under SSL protection.
           <br />
           However, answers to your inquiries will be made over the phone or sent to you by regular email, and I cannot be held
           responsible for any disclosure that may occur.
@@ -341,13 +341,13 @@ export default function page({}: Props) {
         <p>Your details will not be transferred to other parties.</p>
         <p>
           I reserve the right to disclose your details to relevant parties in cases of legal violations, breach of agreement,
-          violation of these terms of use, or Any attempt to do so. This will also occur in cases where a judicial order instructs
+          violation of these terms of use, or any attempt to do so. This will also occur in cases where a judicial order instructs
           me to do so, as well as in any dispute, lawsuit or other legal proceedings between you and the website owner or its
           operators.
         </p>
         <p>
-          Despite my best efforts,I cannot guarantee absolute resistance against third-party intrusion into communications
-          conducted between us. in such cases, You will not have any claims or demands against us.
+          Despite my best efforts, I cannot guarantee absolute resistance against third-party intrusion into communications
+          conducted between us. in such cases, You will not have any claims or demands against me.
         </p>
         <p>
           Your information will be used exclusively for statistical analyzes and their results, without disclosing your personal

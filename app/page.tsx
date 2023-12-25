@@ -35,9 +35,9 @@ export const metadata: Metadata = {
       noimageindex: true,
     },
   },
-  icons: {
-    icon: '/icon.png',
-  },
+  // icons: {
+  //   icon: '/icon.png',
+  // },
   twitter: {
     title: 'Adir Barak - Portfolio',
     description: "The homepage for Adir Barak's portfolio website.",
